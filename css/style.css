@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display:block;
+}
+
+.contenitore {
+	max-width: 1200px; /* o quello che volete */
+	margin: 0 auto; /* per centrare quel contenitore nella pagina */
+    padding: 0 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: #24396E;
+}
+
+header nav ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+    padding:0;
+
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    padding: 50px 0;
+    background-image: url(../immagini/copertina.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: #0b1227;
+}
+
+ h1 {
+    font-size: 60px;
+    color: #24396E;
+    max-width: 40%;
+}
+
+.info-mostra-contenitore {
+    display: flex;
+    padding-top: 50px;
+}
+
+.info-mostra {
+    display: flex;
+    padding: 16px;
+}
+
+div.info {
+   margin-top: 30px;
+}
+
+.mostra div.info h2 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.mostra div.info p {
+    font-size: 21px;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.elenco-artisti {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 32px;
+    padding-top: 50px;
+}
+
+.elenco-artisti img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.elenco-artisti p {
+    text-align: center;
+    padding: 32px 16px;
+}
+
+.lab {
+    padding: 48px 0;
+    background-image: url(../immagini/laboratorio.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+.lab h1 {
+    color: #ffffff;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: #24396E;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.immagini-artisti {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 32px;
+    padding-top: 50px;
+}
+
+.immagini-artisti img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.testataicinori {
+padding: 50px 0;
+background-image: url(../immagini/AP_Icinori_MOXIE_3_2x.jpg);
+height: 400px;
+background-size: cover;
+background-position: center;
+color: #0b1227;    
+}
+
+.testatahattie {
+    padding: 50px 0;
+    background-image: url(../immagini/Handsome-Frank-Hattie\ Clark\ \(2\).jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: #0b1227;
+}
+
+.mos {
+    padding: 48px 0;
+    background-image: url(../immagini/mostra.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+.mos h1 {
+    color: #ffffff;
+}
+
+@media screen and (max-width:600px) {
+    .info-mostra {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .info-mostra div.data, .info-mostra div.info {
+        width: 100%;
+    }
+}
+
